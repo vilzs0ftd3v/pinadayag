@@ -1,0 +1,88 @@
+object third_form: Tthird_form
+  Left = 1400
+  Height = 231
+  Top = 171
+  Width = 395
+  ClientHeight = 231
+  ClientWidth = 395
+  Color = clHighlightText
+  LCLVersion = '3.4.0.0'
+  object Memo1: TMemo
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 30
+    Height = 111
+    Top = 20
+    Width = 350
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 30
+    BorderSpacing.Top = 20
+    BorderSpacing.Right = 15
+    BorderSpacing.Bottom = 100
+    BorderStyle = bsNone
+    Font.Height = 100
+    Lines.Strings = (
+      'Memo1'
+    )
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssBoth
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Memo1
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 30
+    Height = 80
+    Top = 136
+    Width = 170
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Left = 30
+    BorderSpacing.Top = 10
+    BorderSpacing.Right = 30
+    BorderSpacing.Bottom = 15
+    Caption = 'Label1'
+    Font.Height = 80
+    ParentFont = False
+  end
+  object Button1: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 283
+    Height = 24
+    Top = 192
+    Width = 44
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 68
+    BorderSpacing.Bottom = 15
+    Caption = '+'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 332
+    Height = 24
+    Top = 192
+    Width = 48
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 15
+    BorderSpacing.Bottom = 15
+    Caption = '-'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+end

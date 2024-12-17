@@ -1,0 +1,52 @@
+object sec_form: Tsec_form
+  AnchorSideRight.Side = asrBottom
+  Left = 1496
+  Height = 219
+  Top = 217
+  Width = 256
+  Caption = 'sec_form'
+  ClientHeight = 219
+  ClientWidth = 256
+  LCLVersion = '3.4.0.0'
+  Scaled = False
+  object DBMemo1: TDBMemo
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 10
+    Height = 159
+    Top = 25
+    Width = 236
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 10
+    BorderSpacing.Top = 25
+    BorderSpacing.Right = 10
+    BorderSpacing.Bottom = 35
+    DataField = 'text'
+    DataSource = Form1.DataSource1
+    Font.Height = 100
+    ParentFont = False
+    ScrollBars = ssHorizontal
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = DBMemo1
+    AnchorSideRight.Control = Owner
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 10
+    Height = 1
+    Top = 208
+    Width = 1
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Left = 10
+    BorderSpacing.Top = 30
+    BorderSpacing.Bottom = 10
+    Font.Height = 20
+    ParentFont = False
+  end
+end
